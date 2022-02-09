@@ -5,8 +5,8 @@ import router from "./router";
 import OneAuth from "@oneauth/sdk-core";
 import OneAuthVue from "@oneauth/sdk-vue";
 const oneAuth = new OneAuth({
-  issuer: `https://cipherchinacc.oneauth.cn/dashboard/oauth/v1`,
-  clientId: `017W6u5i5OQX8Hv9489n31u04S11N98w`,
+  issuer: `https://qq12345.oneauth.cn/oauth/v1`,
+  clientId: `r21qktX1D2mJt1S71508909zh48r0626`,
   redirectUri: `http://localhost:8080/callback`,
   scopes: ["openid", "profile", "email"],
 });
