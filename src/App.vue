@@ -4,8 +4,9 @@
       <button @click="login">login</button>
     </div>
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">主页</router-link> |
+      <router-link to="/about">去需要认证的页面</router-link> |
+      <router-link to="/userinfo">展示用户信息</router-link>
     </div>
     <router-view />
   </div>
