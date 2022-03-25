@@ -20,13 +20,13 @@ import { Component, Vue } from "vue-property-decorator";
 export default class App extends Vue {
   private login() {
     this.$oneAuth.login({
-      originalUri: `http://localhost:8080/`,
+      redirectUri: `http://localhost:8080/`,
     });
     this.$router;
   }
 
   private logout() {
-    this.$oneAuth.logout({
+    this.$oneAuth.logoutOneAuth({
       redirectUri: `http://localhost:8080/`,
     });
   }
