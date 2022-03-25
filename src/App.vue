@@ -2,6 +2,7 @@
   <div id="app">
     <div>
       <button @click="login">login</button>
+      <button @click="logout">logout</button>
     </div>
     <div id="nav">
       <router-link to="/">主页</router-link> |
@@ -18,8 +19,16 @@ import { Component, Vue } from "vue-property-decorator";
 })
 export default class App extends Vue {
   private login() {
-    this.$oneAuth.login();
+    this.$oneAuth.login({
+      originalUri: `http://localhost:8080/`,
+    });
     this.$router;
+  }
+
+  private logout() {
+    this.$oneAuth.logout({
+      redirectUri: `http://localhost:8080/`,
+    });
   }
 }
 </script>
