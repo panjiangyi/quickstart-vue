@@ -54,8 +54,8 @@ export default class App extends Vue {
     }
   }
 
-  public async created(): Promise<void> {
-    this.logedin = await this.$oneAuth.isAuthenticated();
+  public created(): void {
+    this.logedin = this.$oneAuth.isAuthenticated();
   }
   private login() {
     this.$oneAuth.login({
